@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoginBusiness</string>
+    <string name="allow_term_conditions"><![CDATA[Allow Term & Conditions]]></string>
+</resources>
