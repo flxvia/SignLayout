@@ -6,18 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class Sign_Up extends AppCompatActivity {
+
     Button btnEntrar, btnCriar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        btnEntrar = findViewById(R.id.btnEntrar);
-        btnCriar = findViewById(R.id.btnCriar);
-
+        setContentView(R.layout.sign_up);
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnCriar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Sign_Up.class));
+                Toast.makeText(Sign_Up.this, "Usuário cadastrado", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });
